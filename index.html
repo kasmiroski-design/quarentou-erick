@@ -213,7 +213,7 @@ $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$(
  if(p.length<10){m.textContent='Informe o telefone com DDD.';return}
  $('ok').disabled=true;m.textContent='Enviando…';
  const payload={nome:n.slice(0,100),telefone:ph,_subject:'Confirmação de presença: '+n.slice(0,60)+' (Quarentou!)',_template:'table',_captcha:'false',_honey:''};
- try{const r=await fetch('https://formsubmit.co/ajax/kasmiroski@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});let j={};try{j=await r.json()}catch(_){}const held=/activat/i.test(String(j.message||''));if(!r.ok||(String(j.success)!=='true'&&!held))throw 0;
+ try{const r=await fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});let j={};try{j=await r.json()}catch(_){}const held=/activat/i.test(String(j.message||''));if(!r.ok||(String(j.success)!=='true'&&!held))throw 0;
   m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11.';
   try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}}
  catch(e){m.textContent='Não foi possível confirmar agora. ';const a=document.createElement('a');
