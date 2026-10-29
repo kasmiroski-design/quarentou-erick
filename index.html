@@ -56,6 +56,9 @@ button:active{background:#4a3016}
 #gmail{display:block;margin-top:8px;text-align:center;padding:10px;border:1px solid #7a5a2c;border-radius:999px;color:var(--ink);text-decoration:none;font-size:15px}
 #cp{width:100%;margin-top:8px}
 #msg{min-height:22px;margin:12px 0 0;font-size:15px;color:#f0cf8a}
+#grp{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px;min-height:46px;padding:10px 16px;border-radius:999px;background:#25d366;color:#0b2e17;font-weight:bold;font-size:16px;text-decoration:none;box-sizing:border-box}
+#grp[hidden]{display:none}
+#grp:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #rows{list-style:none;margin:10px 0 0;padding:0}
 #rows li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #4a3216;font-size:15px}
 #rows button{padding:4px 10px;min-height:32px;font-size:13px;flex:none}
@@ -97,6 +100,7 @@ button:active{background:#4a3016}
  <label for="fn">Nome completo</label><input id="fn" autocomplete="name" maxlength="100">
  <label for="ph">Telefone com DDD</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="(41) 99999-9999">
  <div id="msg" role="status"></div>
+ <a id="grp" href="https://chat.whatsapp.com/F0QDmAeaacsFoQHEWpxOBq" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Entrar no grupo da festa</a>
  
  <div class="acts"><button class="cta" id="ok">Confirmar</button><button id="c1">Fechar</button></div>
 </div></div>
@@ -205,7 +209,7 @@ if(matchMedia('(prefers-reduced-motion: reduce)').matches){$('rays').style.opaci
 let db=null,uid=null,unsub=null,rows=[];
 const open=id=>$(id).classList.add('on'),shut=id=>$(id).classList.remove('on');
 (async()=>{try{if(!window.claude)return;const u=await claude.use('user');let host=false;if(u){uid=await u.id();host=await u.canEdit()}db=await claude.use('db');if(host&&db)$('lst').hidden=false}catch(e){}})();
-$('rsvp').onclick=()=>{$('msg').textContent='';open('m1');try{const d=JSON.parse(localStorage.getItem('rsvp-erick-40')||'null');if(d){$('fn').value=d.n||'';$('ph').value=d.p||'';$('msg').textContent='Você já confirmou neste aparelho. Se precisar corrigir, é só enviar de novo.'}}catch(e){}};
+$('rsvp').onclick=()=>{$('msg').textContent='';$('grp').hidden=true;open('m1');try{const d=JSON.parse(localStorage.getItem('rsvp-erick-40')||'null');if(d){$('fn').value=d.n||'';$('ph').value=d.p||'';$('msg').textContent='Você já confirmou neste aparelho. Se precisar corrigir, é só enviar de novo.';$('grp').hidden=false}}catch(e){}};
 $('c1').onclick=()=>shut('m1');$('c2').onclick=()=>shut('m2');
 $('ph').oninput=e=>{const d=e.target.value.replace(/\D/g,'').slice(0,11),k=d.length>10?7:6;e.target.value=d.length>k?`(${d.slice(0,2)}) ${d.slice(2,k)}-${d.slice(k)}`:d.length>2?`(${d.slice(0,2)}) ${d.slice(2)}`:d};
 $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$('ph').value,p=ph.replace(/\D/g,''),m=$('msg');
@@ -214,7 +218,7 @@ $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$(
  $('ok').disabled=true;m.textContent='Enviando…';
  const payload={nome:n.slice(0,100),telefone:ph,_subject:'Confirmação de presença: '+n.slice(0,60)+' (Quarentou!)',_template:'table',_captcha:'false',_honey:''};
  try{const r=await fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});let j={};try{j=await r.json()}catch(_){}const held=/activat/i.test(String(j.message||''));if(!r.ok||(String(j.success)!=='true'&&!held))throw 0;
-  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11.';
+  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11. Entre no grupo da festa para receber as novidades:';$('grp').hidden=false;
   try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}}
  catch(e){m.textContent='Não foi possível confirmar agora. ';const a=document.createElement('a');
   a.href='mailto:kasmiroski@gmail.com?subject='+encodeURIComponent('Confirmação de presença: '+n)+'&body='+encodeURIComponent('Olá, Erick! Confirmo minha presença no Quarentou! (21/11/2026, 19 horas).\n\nNome: '+n+'\nTelefone: '+ph);
