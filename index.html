@@ -218,7 +218,7 @@ $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$(
  $('ok').disabled=true;m.textContent='Enviando…';
  const payload={nome:n.slice(0,100),telefone:ph,_subject:'Confirmação de presença: '+n.slice(0,60)+' (Quarentou!)',_template:'table',_captcha:'false',_honey:''};
  try{const r=await fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});let j={};try{j=await r.json()}catch(_){}const held=/activat/i.test(String(j.message||''));if(!r.ok||(String(j.success)!=='true'&&!held))throw 0;
-  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11. Entre no grupo da festa para receber as novidades:';$('grp').hidden=false;
+  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11. Abrindo o grupo da festa no WhatsApp… Se não abrir, toque no botão abaixo:';$('grp').hidden=false;setTimeout(()=>{location.href=$('grp').href},1500);
   try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}}
  catch(e){m.textContent='Não foi possível confirmar agora. ';const a=document.createElement('a');
   a.href='mailto:kasmiroski@gmail.com?subject='+encodeURIComponent('Confirmação de presença: '+n)+'&body='+encodeURIComponent('Olá, Erick! Confirmo minha presença no Quarentou! (21/11/2026, 19 horas).\n\nNome: '+n+'\nTelefone: '+ph);
