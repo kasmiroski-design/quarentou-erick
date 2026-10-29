@@ -217,11 +217,17 @@ $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$(
  if(p.length<10){m.textContent='Informe o telefone com DDD.';return}
  $('ok').disabled=true;m.textContent='Confirmando…';
  const payload={nome:n.slice(0,100),telefone:ph,_subject:'Confirmação de presença: '+n.slice(0,60)+' (Quarentou!)',_template:'table',_captcha:'false',_honey:''};
- try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}
- const send=fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).catch(()=>{});
- await Promise.race([send,new Promise(r=>setTimeout(r,4000))]);
- m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Entrando no grupo da festa no WhatsApp… Se não abrir, toque no botão abaixo:';$('grp').hidden=false;
- location.href=$('grp').href;
+ let ok=false;
+ try{const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),15000);
+  const r=await fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:ctl.signal});
+  clearTimeout(tm);let j={};try{j=await r.json()}catch(_){}
+  ok=r.ok&&(String(j.success)==='true'||/activat/i.test(String(j.message||'')))}catch(e){}
+ if(ok){try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}
+  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Abrindo o grupo da festa no WhatsApp… Se não abrir, toque no botão abaixo:';$('grp').hidden=false;
+  setTimeout(()=>{location.href=$('grp').href},1200)}
+ else{m.textContent='Não conseguimos registrar sua confirmação agora. Toque em Confirmar de novo ou ';const a=document.createElement('a');
+  a.href='mailto:kasmiroski@gmail.com?subject='+encodeURIComponent('Confirmação de presença: '+n+' (Quarentou!)')+'&body='+encodeURIComponent('Olá, Erick! Confirmo minha presença no Quarentou! (21/11/2026, 19 horas).\n\nNome: '+n+'\nTelefone: '+ph);
+  a.textContent='confirme por e-mail';a.style.color='#f0cf8a';m.append(a,'.')}
  $('ok').disabled=false};
 $('lst').onclick=()=>{open('m2');if(unsub||!db)return;unsub=db.collection('rsvp').orderBy('at').onSnapshot(s=>{rows=s.docs.map(d=>({id:d.id,...d.data()}));renderList()},()=>{$('cnt').textContent='Sem permissão para ver a lista.'})};
 function renderList(){const ul=$('rows');ul.textContent='';$('cnt').textContent=rows.length+(rows.length==1?' confirmado':' confirmados');
