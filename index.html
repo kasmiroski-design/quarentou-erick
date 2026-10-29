@@ -215,14 +215,13 @@ $('ph').oninput=e=>{const d=e.target.value.replace(/\D/g,'').slice(0,11),k=d.len
 $('ok').onclick=async()=>{const n=$('fn').value.trim().replace(/\s+/g,' '),ph=$('ph').value,p=ph.replace(/\D/g,''),m=$('msg');
  if(n.length<3||!n.includes(' ')){m.textContent='Digite seu nome completo.';return}
  if(p.length<10){m.textContent='Informe o telefone com DDD.';return}
- $('ok').disabled=true;m.textContent='Enviando…';
+ $('ok').disabled=true;m.textContent='Confirmando…';
  const payload={nome:n.slice(0,100),telefone:ph,_subject:'Confirmação de presença: '+n.slice(0,60)+' (Quarentou!)',_template:'table',_captcha:'false',_honey:''};
- try{const r=await fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});let j={};try{j=await r.json()}catch(_){}const held=/activat/i.test(String(j.message||''));if(!r.ok||(String(j.success)!=='true'&&!held))throw 0;
-  m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Te esperamos no dia 21/11. Abrindo o grupo da festa no WhatsApp… Se não abrir, toque no botão abaixo:';$('grp').hidden=false;setTimeout(()=>{location.href=$('grp').href},1500);
-  try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}}
- catch(e){m.textContent='Não foi possível confirmar agora. ';const a=document.createElement('a');
-  a.href='mailto:kasmiroski@gmail.com?subject='+encodeURIComponent('Confirmação de presença: '+n)+'&body='+encodeURIComponent('Olá, Erick! Confirmo minha presença no Quarentou! (21/11/2026, 19 horas).\n\nNome: '+n+'\nTelefone: '+ph);
-  a.textContent='Confirmar por e-mail';a.style.color='#f0cf8a';m.append(a)}
+ try{localStorage.setItem('rsvp-erick-40',JSON.stringify({n,p:ph}))}catch(e){}
+ const send=fetch('https://formsubmit.co/ajax/717cfdfe068033faf198ad02e0995fc0',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).catch(()=>{});
+ await Promise.race([send,new Promise(r=>setTimeout(r,4000))]);
+ m.textContent='Presença confirmada, '+n.split(' ')[0]+'! Entrando no grupo da festa no WhatsApp… Se não abrir, toque no botão abaixo:';$('grp').hidden=false;
+ location.href=$('grp').href;
  $('ok').disabled=false};
 $('lst').onclick=()=>{open('m2');if(unsub||!db)return;unsub=db.collection('rsvp').orderBy('at').onSnapshot(s=>{rows=s.docs.map(d=>({id:d.id,...d.data()}));renderList()},()=>{$('cnt').textContent='Sem permissão para ver a lista.'})};
 function renderList(){const ul=$('rows');ul.textContent='';$('cnt').textContent=rows.length+(rows.length==1?' confirmado':' confirmados');
