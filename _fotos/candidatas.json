@@ -1,0 +1,1223 @@
+{
+ "camiseta-de-marca": {
+  "query": "t-shirt on hanger",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=t-shirt+on+hanger&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "perfume-arabe": {
+  "query": "oud perfume bottle",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=oud+perfume+bottle&per_page=20"
+  ]
+ },
+ "pulseira": {
+  "query": "beaded bracelet",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "0d72b712-b776-48b2-b569-0834ac67744d",
+    "img": "https://api.openverse.org/v1/images/0d72b712-b776-48b2-b569-0834ac67744d/thumb/",
+    "page": "https://www.flickr.com/photos/88488351@N00/51736696055",
+    "author": "Franklin Park Library",
+    "license": "CC BY 2.0",
+    "alt": "Colorful Beaded Bracelets 06.2021",
+    "file": "_fotos/cand/pulseira_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "c9bd3138-38fb-494d-871a-7ff36daa5b29",
+    "img": "https://api.openverse.org/v1/images/c9bd3138-38fb-494d-871a-7ff36daa5b29/thumb/",
+    "page": "https://www.rawpixel.com/image/5911145/image-light-public-domain-trees",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Free arm wearing beads bracelets",
+    "file": "_fotos/cand/pulseira_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "88f0e729-ed09-4649-9d99-3268831f94d0",
+    "img": "https://api.openverse.org/v1/images/88f0e729-ed09-4649-9d99-3268831f94d0/thumb/",
+    "page": "https://www.rawpixel.com/image/11524340/photo-image-public-domain-black-products",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Black stone like bead bracelet",
+    "file": "_fotos/cand/pulseira_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "6e307516-7db3-4864-8d7e-4f39a0697505",
+    "img": "https://api.openverse.org/v1/images/6e307516-7db3-4864-8d7e-4f39a0697505/thumb/",
+    "page": "https://www.rawpixel.com/image/6036763/photo-image-background-public-domain-hand",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Hand bead bracelet, close up",
+    "file": "_fotos/cand/pulseira_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "960dffbb-e53b-4d66-a05e-d458cb5d3dc4",
+    "img": "https://api.openverse.org/v1/images/960dffbb-e53b-4d66-a05e-d458cb5d3dc4/thumb/",
+    "page": "https://www.rawpixel.com/image/9186158/beaded-bracelet",
+    "author": "themet",
+    "license": "CC CC0 1.0",
+    "alt": "Beaded Bracelet",
+    "file": "_fotos/cand/pulseira_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "942c7d4c-1d1e-446f-bd94-db62b6bb3328",
+    "img": "https://api.openverse.org/v1/images/942c7d4c-1d1e-446f-bd94-db62b6bb3328/thumb/",
+    "page": "https://www.rawpixel.com/image/8465945/bead-bracelet-anklet",
+    "author": "themet",
+    "license": "CC CC0 1.0",
+    "alt": "Bead bracelet or anklet",
+    "file": "_fotos/cand/pulseira_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "b6b088a6-6905-4b34-98b2-9ddef037b4db",
+    "img": "https://api.openverse.org/v1/images/b6b088a6-6905-4b34-98b2-9ddef037b4db/thumb/",
+    "page": "https://www.rawpixel.com/image/9186092/beaded-bracelet",
+    "author": "themet",
+    "license": "CC CC0 1.0",
+    "alt": "Beaded Bracelet",
+    "file": "_fotos/cand/pulseira_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "ec24f38a-ec5c-4040-902d-0e357422e221",
+    "img": "https://api.openverse.org/v1/images/ec24f38a-ec5c-4040-902d-0e357422e221/thumb/",
+    "page": "https://www.flickr.com/photos/76340031@N02/53817801155",
+    "author": "BLMUtah",
+    "license": "CC PDM 1.0",
+    "alt": "Campers learn how to make beaded bracelets in classrooms at ECC",
+    "file": "_fotos/cand/pulseira_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=beaded+bracelet&per_page=20"
+  ]
+ },
+ "camiseta-basica-de-algodao": {
+  "query": "plain cotton t-shirt",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=plain+cotton+t-shirt&per_page=20"
+  ]
+ },
+ "camisa-polo": {
+  "query": "polo shirt",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=polo+shirt&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "moletom-com-capuz": {
+  "query": "hoodie",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=hoodie&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "bermuda-esportiva": {
+  "query": "athletic shorts",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=athletic+shorts&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "jaqueta-corta-vento": {
+  "query": "windbreaker jacket",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "851b2226-729a-4f84-8f4e-b7a1c1471b77",
+    "img": "https://api.openverse.org/v1/images/851b2226-729a-4f84-8f4e-b7a1c1471b77/thumb/",
+    "page": "https://www.flickr.com/photos/58411470@N00/54251509175",
+    "author": "kewl",
+    "license": "CC BY 2.0",
+    "alt": "A great moment in the transport hub of Luxembourg",
+    "file": "_fotos/cand/jaqueta-corta-vento_0.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=windbreaker+jacket&per_page=20"
+  ]
+ },
+ "tenis-casual": {
+  "query": "white sneakers",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=white+sneakers&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "tenis-de-corrida": {
+  "query": "running shoes",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=running+shoes&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "bone-aba-curva": {
+  "query": "baseball cap",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "528f17d4-f57a-49c3-a389-7dabfd902790",
+    "img": "https://api.openverse.org/v1/images/528f17d4-f57a-49c3-a389-7dabfd902790/thumb/",
+    "page": "https://www.flickr.com/photos/37663331@N00/51330148648",
+    "author": "Numinosity by Gary J Wood",
+    "license": "CC BY-SA 2.0",
+    "alt": "Battered Baseball Cap",
+    "file": "_fotos/cand/bone-aba-curva_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "aec69bb7-66b3-4af3-8165-ade05e2ed659",
+    "img": "https://api.openverse.org/v1/images/aec69bb7-66b3-4af3-8165-ade05e2ed659/thumb/",
+    "page": "https://www.flickr.com/photos/14771153@N04/51824333234",
+    "author": "slgckgc",
+    "license": "CC BY 2.0",
+    "alt": "Mike Stoneman Thriller Series by Kevin G. Chapman Baseball Caps",
+    "file": "_fotos/cand/bone-aba-curva_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "efdf2092-7881-4cf5-942c-af90b83f8892",
+    "img": "https://api.openverse.org/v1/images/efdf2092-7881-4cf5-942c-af90b83f8892/thumb/",
+    "page": "https://www.flickr.com/photos/14771153@N04/52281477195",
+    "author": "slgckgc",
+    "license": "CC BY 2.0",
+    "alt": "Ya Gotta Believe Baseball Cap",
+    "file": "_fotos/cand/bone-aba-curva_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "a4fa00a7-4199-4d8c-8efb-8d310b65b634",
+    "img": "https://api.openverse.org/v1/images/a4fa00a7-4199-4d8c-8efb-8d310b65b634/thumb/",
+    "page": "https://www.flickr.com/photos/14771153@N04/52648797684",
+    "author": "slgckgc",
+    "license": "CC BY 2.0",
+    "alt": "Ya Gotta Believe - Tug McGraw Autographed Baseball Cap",
+    "file": "_fotos/cand/bone-aba-curva_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "30e2e537-e108-4b47-891f-6b370c730e96",
+    "img": "https://api.openverse.org/v1/images/30e2e537-e108-4b47-891f-6b370c730e96/thumb/",
+    "page": "https://www.flickr.com/photos/14771153@N04/54258254273",
+    "author": "slgckgc",
+    "license": "CC BY 2.0",
+    "alt": "Baseball Cap from the Swizzle Inn",
+    "file": "_fotos/cand/bone-aba-curva_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "5164fe18-36f3-44d2-a562-31da17a35407",
+    "img": "https://api.openverse.org/v1/images/5164fe18-36f3-44d2-a562-31da17a35407/thumb/",
+    "page": "https://www.flickr.com/photos/14771153@N04/54247079672",
+    "author": "slgckgc",
+    "license": "CC BY 2.0",
+    "alt": "Ya Gotta Believe Baseball Cap Signed by Tug McGraw",
+    "file": "_fotos/cand/bone-aba-curva_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "27c4d617-90da-4f8e-8f19-cda977a14671",
+    "img": "https://api.openverse.org/v1/images/27c4d617-90da-4f8e-8f19-cda977a14671/thumb/",
+    "page": "https://www.flickr.com/photos/191031534@N08/54931191445",
+    "author": "WWII in View",
+    "license": "CC PDM 1.0",
+    "alt": "6 August 1945 interrogation of 'Enola Gay' crew by General Carl Spaatz on return from Hiroshima in debriefing Quonset, Tinian. Caron in baseball cap.",
+    "file": "_fotos/cand/bone-aba-curva_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "c2261b37-c177-469a-9209-8729929a6cda",
+    "img": "https://api.openverse.org/v1/images/c2261b37-c177-469a-9209-8729929a6cda/thumb/",
+    "page": "https://www.flickr.com/photos/14802104@N07/54483467103",
+    "author": "Manchester Library",
+    "license": "CC BY-SA 2.0",
+    "alt": "Embroidered Baseball Cap",
+    "file": "_fotos/cand/bone-aba-curva_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=baseball+cap&per_page=20"
+  ]
+ },
+ "carteira-de-couro": {
+  "query": "leather wallet",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "175cb0ce-9446-46cb-b525-66131648b646",
+    "img": "https://api.openverse.org/v1/images/175cb0ce-9446-46cb-b525-66131648b646/thumb/",
+    "page": "https://www.flickr.com/photos/202231239@N08/54291787753",
+    "author": "Cook-Folger Family Archive",
+    "license": "CC PDM 1.0",
+    "alt": "THOMASON Clarence Military-leather wallet Morocco",
+    "file": "_fotos/cand/carteira-de-couro_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "b8fa2ce8-fb5c-45c2-b522-4b33f6cb7f6b",
+    "img": "https://api.openverse.org/v1/images/b8fa2ce8-fb5c-45c2-b522-4b33f6cb7f6b/thumb/",
+    "page": "https://stocksnap.io/photo/fashion-clothes-FUCDX0FBLZ",
+    "author": "Angelina Litvin",
+    "license": "CC CC0 1.0",
+    "alt": "Fashion Clothes",
+    "file": "_fotos/cand/carteira-de-couro_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "ba6f2b44-2369-4c6a-8c01-e873c3ee0b49",
+    "img": "https://api.openverse.org/v1/images/ba6f2b44-2369-4c6a-8c01-e873c3ee0b49/thumb/",
+    "page": "https://www.flickr.com/photos/193596759@N07/51351973011",
+    "author": "CryptoWallet.com Images",
+    "license": "CC BY 2.0",
+    "alt": "Cryptocurrency Wallet for Storing Crypto",
+    "file": "_fotos/cand/carteira-de-couro_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "923860c3-ba35-4975-a5b7-32e37fda3c7b",
+    "img": "https://api.openverse.org/v1/images/923860c3-ba35-4975-a5b7-32e37fda3c7b/thumb/",
+    "page": "https://stocksnap.io/photo/leather-purse-Y4IBN1USSQ",
+    "author": "Snufkin",
+    "license": "CC CC0 1.0",
+    "alt": "Leather Purse",
+    "file": "_fotos/cand/carteira-de-couro_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "3213eb9e-a74a-432d-9bd4-bf20526bbd64",
+    "img": "https://api.openverse.org/v1/images/3213eb9e-a74a-432d-9bd4-bf20526bbd64/thumb/",
+    "page": "https://stocksnap.io/photo/leather-bag-4JYA4A4D64",
+    "author": "Snufkin",
+    "license": "CC CC0 1.0",
+    "alt": "Leather Bag",
+    "file": "_fotos/cand/carteira-de-couro_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "673f501b-087a-4e80-857a-c789283d5bc7",
+    "img": "https://api.openverse.org/v1/images/673f501b-087a-4e80-857a-c789283d5bc7/thumb/",
+    "page": "https://www.flickr.com/photos/21712103@N06/18606130414",
+    "author": "media.digest",
+    "license": "CC BY 2.0",
+    "alt": "ORIGIN | Handmade Hand Stitched Bespoke Organic Leather | Smartphone Sleeve | Sustainable Made to Order |",
+    "file": "_fotos/cand/carteira-de-couro_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "3621aa88-1d51-412d-9bea-12925a62928f",
+    "img": "https://api.openverse.org/v1/images/3621aa88-1d51-412d-9bea-12925a62928f/thumb/",
+    "page": "https://stocksnap.io/photo/camera-lens-4M94QILSNA",
+    "author": "Clem Onojeghuo",
+    "license": "CC CC0 1.0",
+    "alt": "Camera Lens",
+    "file": "_fotos/cand/carteira-de-couro_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "a132e718-6c3c-44d5-8470-25fe08cb5e99",
+    "img": "https://api.openverse.org/v1/images/a132e718-6c3c-44d5-8470-25fe08cb5e99/thumb/",
+    "page": "https://stocksnap.io/photo/bicycle-tire-RA81ACVY2Z",
+    "author": "John Debrey",
+    "license": "CC CC0 1.0",
+    "alt": "Bicycle Tire",
+    "file": "_fotos/cand/carteira-de-couro_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=leather+wallet&per_page=20"
+  ]
+ },
+ "cinto-de-couro": {
+  "query": "leather belt",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "cc448d3f-3e26-4b51-aea1-8afdfb6c0291",
+    "img": "https://api.openverse.org/v1/images/cc448d3f-3e26-4b51-aea1-8afdfb6c0291/thumb/",
+    "page": "https://www.flickr.com/photos/192679240@N05/53067878051",
+    "author": "yawning hunter",
+    "license": "CC BY 2.0",
+    "alt": "leather belt buckle",
+    "file": "_fotos/cand/cinto-de-couro_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "5c80fad4-6755-462c-8a43-705385ba897f",
+    "img": "https://api.openverse.org/v1/images/5c80fad4-6755-462c-8a43-705385ba897f/thumb/",
+    "page": "https://www.flickr.com/photos/31518985@N04/52916534638",
+    "author": "ambabheg",
+    "license": "CC BY 2.0",
+    "alt": "2023 (365 challenge) - Week 21 (Old) - Day 3 - old leather belt",
+    "file": "_fotos/cand/cinto-de-couro_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "dfbc642f-005f-47a7-8d5c-29fc6ed090ff",
+    "img": "https://api.openverse.org/v1/images/dfbc642f-005f-47a7-8d5c-29fc6ed090ff/thumb/",
+    "page": "https://www.flickr.com/photos/31518985@N04/52797078622",
+    "author": "ambabheg",
+    "license": "CC BY 2.0",
+    "alt": "2023 (365 challenge) - Week 14 - ( Curves ) - Day 6 - rolled up old leather belt",
+    "file": "_fotos/cand/cinto-de-couro_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "30254e10-e3e5-4083-9c61-695b21169139",
+    "img": "https://api.openverse.org/v1/images/30254e10-e3e5-4083-9c61-695b21169139/thumb/",
+    "page": "https://www.flickr.com/photos/191031534@N08/55466695679",
+    "author": "WWII in View",
+    "license": "CC PDM 1.0",
+    "alt": "The nose gunner at his position. He was obviously exposed to the elements when manning the gun, and he was tethered to the aircraft with a broad leather belt and cable, just visible around his waist. (Rudy Arnold Photo Collection, NASM)",
+    "file": "_fotos/cand/cinto-de-couro_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "dd504f9c-0cb4-4f44-8297-7cf36c39851a",
+    "img": "https://api.openverse.org/v1/images/dd504f9c-0cb4-4f44-8297-7cf36c39851a/thumb/",
+    "page": "https://www.rawpixel.com/image/10066942/leather-belt-c-1936-harry-mann-waddell",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Leather Belt (c. 1936) Harry",
+    "file": "_fotos/cand/cinto-de-couro_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "9d6ab226-92f3-46b1-947b-78dc1c3730a9",
+    "img": "https://api.openverse.org/v1/images/9d6ab226-92f3-46b1-947b-78dc1c3730a9/thumb/",
+    "page": "https://www.rawpixel.com/image/6040795/leather-belt-free-public-domain-cc0-photo",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Leather belt",
+    "file": "_fotos/cand/cinto-de-couro_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "66cc6e28-417c-4d24-a1d1-fb0c45540325",
+    "img": "https://api.openverse.org/v1/images/66cc6e28-417c-4d24-a1d1-fb0c45540325/thumb/",
+    "page": "https://www.rawpixel.com/image/7489207/photo-image-cat-public-domain-united-states",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Leather belt, buckle missing; 6",
+    "file": "_fotos/cand/cinto-de-couro_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "86519cca-d3d7-47e7-b534-433803325395",
+    "img": "https://api.openverse.org/v1/images/86519cca-d3d7-47e7-b534-433803325395/thumb/",
+    "page": "https://www.rawpixel.com/image/8345996/leather-belt-strap",
+    "author": "themet",
+    "license": "CC CC0 1.0",
+    "alt": "Leather belt strap",
+    "file": "_fotos/cand/cinto-de-couro_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=leather+belt&per_page=20"
+  ]
+ },
+ "mochila-urbana": {
+  "query": "backpack",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "9a859e02-ab21-49c5-a97d-e92cee4709c3",
+    "img": "https://api.openverse.org/v1/images/9a859e02-ab21-49c5-a97d-e92cee4709c3/thumb/",
+    "page": "https://www.flickr.com/photos/80223459@N05/51484725609",
+    "author": "YellowstoneNPS",
+    "license": "CC PDM 1.0",
+    "alt": "Backpackers in Hoodoo Basin",
+    "file": "_fotos/cand/mochila-urbana_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "b7f12b5e-0a76-4f0b-8491-ec63bb671173",
+    "img": "https://api.openverse.org/v1/images/b7f12b5e-0a76-4f0b-8491-ec63bb671173/thumb/",
+    "page": "https://www.flickr.com/photos/14913305@N00/51967088493",
+    "author": "Chris Hunkeler",
+    "license": "CC BY-SA 2.0",
+    "alt": "Man with Pink Backpack",
+    "file": "_fotos/cand/mochila-urbana_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "4c1657b8-9af9-48de-9598-3b19e4b1ce31",
+    "img": "https://api.openverse.org/v1/images/4c1657b8-9af9-48de-9598-3b19e4b1ce31/thumb/",
+    "page": "https://www.flickr.com/photos/156869144@N02/52319100157",
+    "author": "Greenville, NC",
+    "license": "CC PDM 1.0",
+    "alt": "Back to School Free Haircut & Backpack Giveaway (2022)",
+    "file": "_fotos/cand/mochila-urbana_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "cbea51fc-f29d-4e21-a341-68890849c2b0",
+    "img": "https://api.openverse.org/v1/images/cbea51fc-f29d-4e21-a341-68890849c2b0/thumb/",
+    "page": "https://www.flickr.com/photos/156869144@N02/52319090557",
+    "author": "Greenville, NC",
+    "license": "CC PDM 1.0",
+    "alt": "Back to School Free Haircut & Backpack Giveaway (2022)",
+    "file": "_fotos/cand/mochila-urbana_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "8e7d1a7c-58cd-43f3-a245-369af852670b",
+    "img": "https://api.openverse.org/v1/images/8e7d1a7c-58cd-43f3-a245-369af852670b/thumb/",
+    "page": "https://www.flickr.com/photos/80223459@N05/51485125034",
+    "author": "YellowstoneNPS",
+    "license": "CC PDM 1.0",
+    "alt": "Backpackers in Lamar Valley with bison",
+    "file": "_fotos/cand/mochila-urbana_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "1f82cbd9-b14b-4ea2-b865-3850069aa026",
+    "img": "https://api.openverse.org/v1/images/1f82cbd9-b14b-4ea2-b865-3850069aa026/thumb/",
+    "page": "https://www.flickr.com/photos/80223459@N05/51484412836",
+    "author": "YellowstoneNPS",
+    "license": "CC PDM 1.0",
+    "alt": "Backpackers crossing Cache Creek",
+    "file": "_fotos/cand/mochila-urbana_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "2e064d55-3845-4401-9051-a954db7f924b",
+    "img": "https://api.openverse.org/v1/images/2e064d55-3845-4401-9051-a954db7f924b/thumb/",
+    "page": "https://www.flickr.com/photos/80223459@N05/51485338855",
+    "author": "YellowstoneNPS",
+    "license": "CC PDM 1.0",
+    "alt": "Backpackers crossing Calfee Creek",
+    "file": "_fotos/cand/mochila-urbana_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "fc4420ee-f17b-4eb1-9597-838fa601c3c3",
+    "img": "https://api.openverse.org/v1/images/fc4420ee-f17b-4eb1-9597-838fa601c3c3/thumb/",
+    "page": "https://www.flickr.com/photos/80223459@N05/51485105480",
+    "author": "YellowstoneNPS",
+    "license": "CC PDM 1.0",
+    "alt": "Backpackers along the Upper Miller Creek Trail",
+    "file": "_fotos/cand/mochila-urbana_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=backpack&per_page=20",
+   "download aa7cf19a-e103-4856-9f5f-b2f49e3845a6: 500 Server Error: Internal Server Error for url: https://api.openverse.org/v1/images/aa7cf19a-e103-4856-9f5f-b2f49e3845a6/thumb/"
+  ]
+ },
+ "mala-de-bordo": {
+  "query": "carry on suitcase",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "53d6eaad-bfb7-42fc-a525-4b5d8be1330a",
+    "img": "https://api.openverse.org/v1/images/53d6eaad-bfb7-42fc-a525-4b5d8be1330a/thumb/",
+    "page": "https://www.flickr.com/photos/156515782@N02/52541434826",
+    "author": "saudekjan",
+    "license": "CC PDM 1.0",
+    "alt": "Checkpoint Charlie",
+    "file": "_fotos/cand/mala-de-bordo_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "8342ea34-26c3-4321-b1df-980bff590cc3",
+    "img": "https://api.openverse.org/v1/images/8342ea34-26c3-4321-b1df-980bff590cc3/thumb/",
+    "page": "https://www.flickr.com/photos/127906254@N06/37245567345",
+    "author": "Photograph Curator",
+    "license": "CC PDM 1.0",
+    "alt": "Lot-913-M-O-4",
+    "file": "_fotos/cand/mala-de-bordo_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "6583a3bc-3091-4d05-a717-fd9ddf800650",
+    "img": "https://api.openverse.org/v1/images/6583a3bc-3091-4d05-a717-fd9ddf800650/thumb/",
+    "page": "https://www.flickr.com/photos/192018235@N04/51926178419",
+    "author": "We Like Sharing",
+    "license": "CC CC0 1.0",
+    "alt": "Transportation in snow",
+    "file": "_fotos/cand/mala-de-bordo_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "820ac218-7d66-4ab5-a88b-a6ae8b39dfbf",
+    "img": "https://api.openverse.org/v1/images/820ac218-7d66-4ab5-a88b-a6ae8b39dfbf/thumb/",
+    "page": "https://www.flickr.com/photos/156515782@N02/54390328865",
+    "author": "saudekjan",
+    "license": "CC BY-SA 2.0",
+    "alt": "Suitcases",
+    "file": "_fotos/cand/mala-de-bordo_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "fd6473af-8f13-43d6-992b-d871c7cccd2f",
+    "img": "https://api.openverse.org/v1/images/fd6473af-8f13-43d6-992b-d871c7cccd2f/thumb/",
+    "page": "https://www.flickr.com/photos/83468718@N06/54291176175",
+    "author": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "alt": "Bologna - Bologna Centrale",
+    "file": "_fotos/cand/mala-de-bordo_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "e9119b63-ca2b-4926-9ed5-673ada6bc8de",
+    "img": "https://api.openverse.org/v1/images/e9119b63-ca2b-4926-9ed5-673ada6bc8de/thumb/",
+    "page": "https://www.flickr.com/photos/36989019@N08/54503067783",
+    "author": "Loco Steve",
+    "license": "CC BY-SA 2.0",
+    "alt": "My Way",
+    "file": "_fotos/cand/mala-de-bordo_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "0f376ff3-dd59-4866-aa84-a726726a2431",
+    "img": "https://api.openverse.org/v1/images/0f376ff3-dd59-4866-aa84-a726726a2431/thumb/",
+    "page": "https://www.flickr.com/photos/156515782@N02/54968735361",
+    "author": "saudekjan",
+    "license": "CC PDM 1.0",
+    "alt": "evacuated",
+    "file": "_fotos/cand/mala-de-bordo_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "36bb9f6b-fd98-40d0-a7f6-633858fa75cb",
+    "img": "https://api.openverse.org/v1/images/36bb9f6b-fd98-40d0-a7f6-633858fa75cb/thumb/",
+    "page": "https://www.flickr.com/photos/83468718@N06/54290993313",
+    "author": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "alt": "Bologna - 2 August 1980 10:25",
+    "file": "_fotos/cand/mala-de-bordo_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=carry+on+suitcase&per_page=20"
+  ]
+ },
+ "relogio-analogico": {
+  "query": "analog wristwatch",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "46b3ffa7-8c13-45b4-ab56-f0a08ebb477a",
+    "img": "https://api.openverse.org/v1/images/46b3ffa7-8c13-45b4-ab56-f0a08ebb477a/thumb/",
+    "page": "https://stocksnap.io/photo/wood-watch-IVZDQN85VY",
+    "author": "Burst",
+    "license": "CC CC0 1.0",
+    "alt": "Wood Watch",
+    "file": "_fotos/cand/relogio-analogico_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "8a901e55-b721-4111-824a-1cf55d68d2af",
+    "img": "https://api.openverse.org/v1/images/8a901e55-b721-4111-824a-1cf55d68d2af/thumb/",
+    "page": "https://www.rawpixel.com/image/5973163/free-public-domain-cc0-photo",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "",
+    "file": "_fotos/cand/relogio-analogico_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "22a6a254-10e8-4069-9ed6-c57c11cc6cf0",
+    "img": "https://api.openverse.org/v1/images/22a6a254-10e8-4069-9ed6-c57c11cc6cf0/thumb/",
+    "page": "https://www.rawpixel.com/image/3305452/free-photo-image-wrist-watch-wood-accessory-analog",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Black analogue watch numberless watch",
+    "file": "_fotos/cand/relogio-analogico_2.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=analog+wristwatch&per_page=20"
+  ]
+ },
+ "oculos-de-sol": {
+  "query": "sunglasses",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "0e0f9da9-ee29-41c2-9505-95616ae93746",
+    "img": "https://api.openverse.org/v1/images/0e0f9da9-ee29-41c2-9505-95616ae93746/thumb/",
+    "page": "https://www.flickr.com/photos/67936502@N00/48020118071",
+    "author": "susanjanegolding",
+    "license": "CC BY 2.0",
+    "alt": "sunglasses",
+    "file": "_fotos/cand/oculos-de-sol_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "9f5f6555-852e-40be-a5d0-62a50c0a3a2c",
+    "img": "https://api.openverse.org/v1/images/9f5f6555-852e-40be-a5d0-62a50c0a3a2c/thumb/",
+    "page": "https://www.flickr.com/photos/49503154413@N01/493685671",
+    "author": "geishaboy500",
+    "license": "CC BY 2.0",
+    "alt": "The Sunglasses Session",
+    "file": "_fotos/cand/oculos-de-sol_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "e47717f3-8581-47fb-bdeb-71cd9065b2c6",
+    "img": "https://api.openverse.org/v1/images/e47717f3-8581-47fb-bdeb-71cd9065b2c6/thumb/",
+    "page": "https://www.flickr.com/photos/26344495@N05/51363949295",
+    "author": "Ivan Radic",
+    "license": "CC BY 2.0",
+    "alt": "Sunglasses on the ground close up with blurry background",
+    "file": "_fotos/cand/oculos-de-sol_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "d5ea3e03-6164-4eb5-8f9a-ff27980e7c33",
+    "img": "https://api.openverse.org/v1/images/d5ea3e03-6164-4eb5-8f9a-ff27980e7c33/thumb/",
+    "page": "https://www.flickr.com/photos/99014076@N00/493766546",
+    "author": "Alexbip",
+    "license": "CC BY 2.0",
+    "alt": "All sunglasses out",
+    "file": "_fotos/cand/oculos-de-sol_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "64935a50-8f86-41a6-b95c-c81d268ee8ae",
+    "img": "https://api.openverse.org/v1/images/64935a50-8f86-41a6-b95c-c81d268ee8ae/thumb/",
+    "page": "https://www.flickr.com/photos/49503154413@N01/493685801",
+    "author": "geishaboy500",
+    "license": "CC BY 2.0",
+    "alt": "The Sunglasses Session",
+    "file": "_fotos/cand/oculos-de-sol_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "18d1bbb8-a20a-406f-9cc6-ef7acdd1cca2",
+    "img": "https://api.openverse.org/v1/images/18d1bbb8-a20a-406f-9cc6-ef7acdd1cca2/thumb/",
+    "page": "https://www.flickr.com/photos/26344495@N05/51271550601",
+    "author": "Ivan Radic",
+    "license": "CC BY 2.0",
+    "alt": "Sunglasses with blue lenses on a tree stump",
+    "file": "_fotos/cand/oculos-de-sol_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "23a95828-c2f6-4976-8272-37228496de0b",
+    "img": "https://api.openverse.org/v1/images/23a95828-c2f6-4976-8272-37228496de0b/thumb/",
+    "page": "https://www.flickr.com/photos/49503154413@N01/493685443",
+    "author": "geishaboy500",
+    "license": "CC BY 2.0",
+    "alt": "The Sunglasses Session",
+    "file": "_fotos/cand/oculos-de-sol_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "d0c9d5d6-0326-405c-bb4d-d380f863b4c3",
+    "img": "https://api.openverse.org/v1/images/d0c9d5d6-0326-405c-bb4d-d380f863b4c3/thumb/",
+    "page": "https://www.flickr.com/photos/54327644@N04/52319861967",
+    "author": "Rmonty119",
+    "license": "CC BY 2.0",
+    "alt": "Sunglasses",
+    "file": "_fotos/cand/oculos-de-sol_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=sunglasses&per_page=20"
+  ]
+ },
+ "colar-prata-com-pingente": {
+  "query": "silver pendant necklace",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=silver+pendant+necklace&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "pulseira-de-couro": {
+  "query": "leather bracelet",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=leather+bracelet&per_page=20",
+   "openverse: 500 Server Error: Internal Server Error for url: https://api.openverse.org/v1/images/?q=leather+bracelet&license=cc0%2Cpdm%2Cby%2Cby-sa&category=photograph&page_size=12"
+  ]
+ },
+ "pulseira-prata": {
+  "query": "silver bracelet",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=silver+bracelet&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "perfume-importado-100-ml": {
+  "query": "perfume bottle",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "c672d612-efab-467a-8c08-b98fa06ced25",
+    "img": "https://api.openverse.org/v1/images/c672d612-efab-467a-8c08-b98fa06ced25/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/52575885613",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Perfume bottles",
+    "file": "_fotos/cand/perfume-importado-100-ml_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "de41ac1c-14f8-4bcc-98c8-ee6449268c4f",
+    "img": "https://api.openverse.org/v1/images/de41ac1c-14f8-4bcc-98c8-ee6449268c4f/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/51827390947",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Perfume Bottles....",
+    "file": "_fotos/cand/perfume-importado-100-ml_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "7faa752f-a856-401d-b2f7-0cdf646af715",
+    "img": "https://api.openverse.org/v1/images/7faa752f-a856-401d-b2f7-0cdf646af715/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/52530502009",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Perfume Bottle",
+    "file": "_fotos/cand/perfume-importado-100-ml_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "8637e83f-ee0d-4925-99eb-41a64259c435",
+    "img": "https://api.openverse.org/v1/images/8637e83f-ee0d-4925-99eb-41a64259c435/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/52937014750",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Silver Topped Perfume Bottle",
+    "file": "_fotos/cand/perfume-importado-100-ml_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "5f1d14bb-1144-463e-ba71-1f257a0a8f23",
+    "img": "https://api.openverse.org/v1/images/5f1d14bb-1144-463e-ba71-1f257a0a8f23/thumb/",
+    "page": "https://stocksnap.io/photo/perfume-bottle-0BZ1W3NNQK",
+    "author": "Jessica Weiller",
+    "license": "CC CC0 1.0",
+    "alt": "Perfume Bottle",
+    "file": "_fotos/cand/perfume-importado-100-ml_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "7874995d-dbf5-4b31-828e-3055675590ee",
+    "img": "https://api.openverse.org/v1/images/7874995d-dbf5-4b31-828e-3055675590ee/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/53469577014",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Perfume Bottles and Eclectica",
+    "file": "_fotos/cand/perfume-importado-100-ml_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "afcbe2c7-5640-4a26-9e63-88ef491dc4a5",
+    "img": "https://api.openverse.org/v1/images/afcbe2c7-5640-4a26-9e63-88ef491dc4a5/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/52936025052",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Lalique Perfume Bottle",
+    "file": "_fotos/cand/perfume-importado-100-ml_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "622c8a94-9dcc-4c9d-99c1-46efef9a9615",
+    "img": "https://api.openverse.org/v1/images/622c8a94-9dcc-4c9d-99c1-46efef9a9615/thumb/",
+    "page": "https://www.flickr.com/photos/79721788@N00/53806939179",
+    "author": "D-Stanley",
+    "license": "CC BY 2.0",
+    "alt": "Blue Glass Perfume Bottles",
+    "file": "_fotos/cand/perfume-importado-100-ml_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=perfume+bottle&per_page=20"
+  ]
+ },
+ "perfume-amadeirado": {
+  "query": "cologne bottle",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=cologne+bottle&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "perfume-floral": {
+  "query": "floral perfume bottle",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "36765320-9723-4572-a978-1bcd02ea9cc2",
+    "img": "https://api.openverse.org/v1/images/36765320-9723-4572-a978-1bcd02ea9cc2/thumb/",
+    "page": "https://www.flickr.com/photos/182826961@N04/51360897639",
+    "author": "Auckland Museum Collections",
+    "license": "CC BY 2.0",
+    "alt": "Bottle, perfume",
+    "file": "_fotos/cand/perfume-floral_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "3c0f2d4e-c630-4f8a-add6-8ef495f3f925",
+    "img": "https://api.openverse.org/v1/images/3c0f2d4e-c630-4f8a-add6-8ef495f3f925/thumb/",
+    "page": "https://www.rawpixel.com/image/9709899/pair-snuff-bottles-with-floral-scrolls",
+    "author": "clevelandart",
+    "license": "CC CC0 1.0",
+    "alt": "Pair Snuff Bottles Floral Scrolls",
+    "file": "_fotos/cand/perfume-floral_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "9317646c-6777-4326-ad44-08d981f6f641",
+    "img": "https://api.openverse.org/v1/images/9317646c-6777-4326-ad44-08d981f6f641/thumb/",
+    "page": "https://www.rawpixel.com/image/10138071/photo-image-art-design-floral",
+    "author": null,
+    "license": "CC CC0 1.0",
+    "alt": "Pair Blue White Bottles Mounted",
+    "file": "_fotos/cand/perfume-floral_2.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=floral+perfume+bottle&per_page=20"
+  ]
+ },
+ "smartband-fitness": {
+  "query": "fitness tracker",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=fitness+tracker&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "fone-bluetooth-over-ear": {
+  "query": "over-ear headphones",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=over-ear+headphones&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "fone-sem-fio-com-estojo": {
+  "query": "wireless earbuds",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=wireless+earbuds&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "caixa-de-som-bluetooth": {
+  "query": "bluetooth speaker",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=bluetooth+speaker&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "power-bank-20-000-mah": {
+  "query": "power bank",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=power+bank&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "camera-instantanea": {
+  "query": "instant camera",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=instant+camera&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "controle-para-videogame": {
+  "query": "game controller",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=game+controller&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "garrafa-termica": {
+  "query": "insulated water bottle",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=insulated+water+bottle&per_page=20"
+  ]
+ },
+ "caneca-termica": {
+  "query": "travel mug",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=travel+mug&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "box-de-livros": {
+  "query": "stack of books",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=stack+of+books&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "jogo-de-tabuleiro": {
+  "query": "board game",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=board+game&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vela-aromatica": {
+  "query": "scented candle",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=scented+candle&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "planta-com-vaso": {
+  "query": "potted plant",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=potted+plant&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "kit-skincare": {
+  "query": "skincare products",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=skincare+products&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vale-jantar": {
+  "query": "restaurant dinner",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=restaurant+dinner&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vale-cinema-para-dois": {
+  "query": "cinema popcorn",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=cinema+popcorn&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vale-delivery": {
+  "query": "food delivery",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "1d6b4dc1-29ea-4f82-a7d1-8928024b8e05",
+    "img": "https://api.openverse.org/v1/images/1d6b4dc1-29ea-4f82-a7d1-8928024b8e05/thumb/",
+    "page": "https://www.flickr.com/photos/16176711@N02/51987900511",
+    "author": "conall..",
+    "license": "CC BY 2.0",
+    "alt": "food delivery",
+    "file": "_fotos/cand/vale-delivery_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "250384f3-c77c-4279-86fe-c747f67e6369",
+    "img": "https://api.openverse.org/v1/images/250384f3-c77c-4279-86fe-c747f67e6369/thumb/",
+    "page": "https://www.flickr.com/photos/25802865@N08/52466795795",
+    "author": "chooyutshing",
+    "license": "CC BY 2.0",
+    "alt": "Perennial Online Food Delivery",
+    "file": "_fotos/cand/vale-delivery_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "8bf295eb-22c2-40f4-8bbd-61e240f76c83",
+    "img": "https://api.openverse.org/v1/images/8bf295eb-22c2-40f4-8bbd-61e240f76c83/thumb/",
+    "page": "https://www.flickr.com/photos/195311218@N08/52158833237",
+    "author": "The Bag N Box Man LTD",
+    "license": "CC BY 2.0",
+    "alt": "Food delivery driver delivering online order",
+    "file": "_fotos/cand/vale-delivery_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "f2980a9b-69bf-4cca-a367-7eae1e2c7f96",
+    "img": "https://api.openverse.org/v1/images/f2980a9b-69bf-4cca-a367-7eae1e2c7f96/thumb/",
+    "page": "https://www.flickr.com/photos/25802865@N08/54720558887",
+    "author": "chooyutshing",
+    "license": "CC PDM 1.0",
+    "alt": "Grab Food Delivery Rider",
+    "file": "_fotos/cand/vale-delivery_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "9021bce7-3e46-4ed4-8eba-095fcfbb2676",
+    "img": "https://api.openverse.org/v1/images/9021bce7-3e46-4ed4-8eba-095fcfbb2676/thumb/",
+    "page": "https://www.flickr.com/photos/57866029@N00/52430092972",
+    "author": "Abdulla Al Muhairi",
+    "license": "CC CC0 1.0",
+    "alt": "Food delivery",
+    "file": "_fotos/cand/vale-delivery_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "7a8d1abc-61c2-43f8-b24e-041fb3260645",
+    "img": "https://api.openverse.org/v1/images/7a8d1abc-61c2-43f8-b24e-041fb3260645/thumb/",
+    "page": "https://www.flickr.com/photos/25802865@N08/54520158706",
+    "author": "chooyutshing",
+    "license": "CC BY 2.0",
+    "alt": "Food Delivery Van",
+    "file": "_fotos/cand/vale-delivery_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "58246758-ad38-4053-b8b4-f745e21e1c5f",
+    "img": "https://api.openverse.org/v1/images/58246758-ad38-4053-b8b4-f745e21e1c5f/thumb/",
+    "page": "https://www.flickr.com/photos/131688925@N04/51884761986",
+    "author": "Mohamod Fasil",
+    "license": "CC BY 2.0",
+    "alt": "Talabat Food Delivery | Qatar",
+    "file": "_fotos/cand/vale-delivery_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "a9a80560-2a6b-4a58-939e-c9fe69cf5af0",
+    "img": "https://api.openverse.org/v1/images/a9a80560-2a6b-4a58-939e-c9fe69cf5af0/thumb/",
+    "page": "https://www.flickr.com/photos/25802865@N08/54522482218",
+    "author": "chooyutshing",
+    "license": "CC BY 2.0",
+    "alt": "Food Delivery Van",
+    "file": "_fotos/cand/vale-delivery_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=food+delivery&per_page=20",
+   "download 4ebf9e41-f9bd-4241-9b11-110670da8642: 500 Server Error: Internal Server Error for url: https://api.openverse.org/v1/images/4ebf9e41-f9bd-4241-9b11-110670da8642/thumb/"
+  ]
+ },
+ "vale-livraria": {
+  "query": "bookstore",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=bookstore&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vale-spa-e-massagem": {
+  "query": "spa massage",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=spa+massage&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "vale-presente-r-500": {
+  "query": "gift box",
+  "candidates": [],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=gift+box&per_page=20",
+   "openverse: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)"
+  ]
+ },
+ "valor-livre": {
+  "query": "wrapped gift",
+  "candidates": [
+   {
+    "src": "openverse",
+    "id": "7297667c-b220-4800-8d83-c3186c118128",
+    "img": "https://api.openverse.org/v1/images/7297667c-b220-4800-8d83-c3186c118128/thumb/",
+    "page": "https://www.flickr.com/photos/98945402@N06/51630080451",
+    "author": "Dancewear Central",
+    "license": "CC BY 2.0",
+    "alt": "Wrapping Gifts for Dancers",
+    "file": "_fotos/cand/valor-livre_0.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "10a1732b-d4e6-4df1-b2bc-0267d345562c",
+    "img": "https://api.openverse.org/v1/images/10a1732b-d4e6-4df1-b2bc-0267d345562c/thumb/",
+    "page": "https://www.flickr.com/photos/12070225@N03/52580870336",
+    "author": "judy dean",
+    "license": "CC BY-SA 2.0",
+    "alt": "Wrapped Gift",
+    "file": "_fotos/cand/valor-livre_1.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "2f48ac1a-ad84-4838-a00e-4d9649a9545a",
+    "img": "https://api.openverse.org/v1/images/2f48ac1a-ad84-4838-a00e-4d9649a9545a/thumb/",
+    "page": "https://www.flickr.com/photos/97651299@N00/54185441984",
+    "author": "vanhookc",
+    "license": "CC BY-SA 2.0",
+    "alt": "Wrapping gifts...",
+    "file": "_fotos/cand/valor-livre_2.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "c4da374f-e60b-4022-91e8-182b331643ee",
+    "img": "https://api.openverse.org/v1/images/c4da374f-e60b-4022-91e8-182b331643ee/thumb/",
+    "page": "https://www.flickr.com/photos/136264958@N03/52593949245",
+    "author": "SouthendCC",
+    "license": "CC CC0 1.0",
+    "alt": "Southend Youth Councillor donates and wraps gifts",
+    "file": "_fotos/cand/valor-livre_3.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "ae00ed51-78c8-48e7-9df1-fcd200a5fb9b",
+    "img": "https://api.openverse.org/v1/images/ae00ed51-78c8-48e7-9df1-fcd200a5fb9b/thumb/",
+    "page": "https://www.flickr.com/photos/202846129@N03/54583230927",
+    "author": "nenadstojkovicart",
+    "license": "CC BY 2.0",
+    "alt": "Colorful wrapped gifts arranged under a Christmas tree create a festive atmosphere during the holiday season",
+    "file": "_fotos/cand/valor-livre_4.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "de0f4ecd-586a-4462-aead-4687558c22b1",
+    "img": "https://api.openverse.org/v1/images/de0f4ecd-586a-4462-aead-4687558c22b1/thumb/",
+    "page": "https://www.flickr.com/photos/27346873@N04/53407999701",
+    "author": "Javcon117*",
+    "license": "CC BY-SA 2.0",
+    "alt": "Wrapping Gifts 1",
+    "file": "_fotos/cand/valor-livre_5.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "6295870a-bc6c-4b54-bb85-ef0750ac8991",
+    "img": "https://api.openverse.org/v1/images/6295870a-bc6c-4b54-bb85-ef0750ac8991/thumb/",
+    "page": "https://www.flickr.com/photos/27346873@N04/53407077567",
+    "author": "Javcon117*",
+    "license": "CC BY-SA 2.0",
+    "alt": "Wrapping Gifts 3",
+    "file": "_fotos/cand/valor-livre_6.jpg"
+   },
+   {
+    "src": "openverse",
+    "id": "ae9ef8eb-a949-40d5-9693-713ce8c1ecb3",
+    "img": "https://api.openverse.org/v1/images/ae9ef8eb-a949-40d5-9693-713ce8c1ecb3/thumb/",
+    "page": "https://www.flickr.com/photos/27346873@N04/53408332184",
+    "author": "Javcon117*",
+    "license": "CC BY-SA 2.0",
+    "alt": "Wrapping Gifts 4",
+    "file": "_fotos/cand/valor-livre_7.jpg"
+   }
+  ],
+  "errors": [
+   "unsplash: 403 Client Error: Forbidden for url: https://unsplash.com/napi/search/photos?query=wrapped+gift&per_page=20"
+  ]
+ }
+}
