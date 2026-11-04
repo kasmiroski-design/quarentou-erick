@@ -2,7 +2,7 @@ name: fotos-presentes
 on:
   push:
     branches: [fotos-tmp]
-    paths: ['_fotos/queries.json', '_fotos/coletar.py']
+    paths: ['_fotos/unsplash.json', '_fotos/baixar.py']
 permissions:
   contents: write
 jobs:
@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pillow requests
-      - run: python _fotos/coletar.py
+      - run: python _fotos/baixar.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
