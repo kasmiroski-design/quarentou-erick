@@ -177,6 +177,16 @@
     padding: 10px 18px; border-radius: 99px; font-weight: 700; font-size: 14px; z-index: 40;
   }
   @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+  .musbtn {
+    all: unset; box-sizing: border-box; cursor: pointer; position: fixed; z-index: 35;
+    right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    min-height: 44px; padding: 0 16px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;
+    font: 700 14px var(--font-body); letter-spacing: .04em; background: var(--accent); color: var(--accent-fg);
+    box-shadow: 0 6px 18px rgba(0,0,0,.45);
+  }
+  .musbtn[aria-pressed="true"] { background: var(--surface); color: var(--gold); box-shadow: inset 0 0 0 1.5px var(--accent), 0 6px 18px rgba(0,0,0,.45); }
+  .musbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  body.has-mus main { padding-bottom: 64px; }
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -234,6 +244,7 @@
   </div>
 </div>
 <div class="toast" id="toast" hidden></div>
+<button class="musbtn" id="musBtn" type="button" aria-pressed="false" hidden>♫ Tocar música</button>
 
 <script>
 (function () {
@@ -557,6 +568,38 @@
   document.getElementById("copykey").addEventListener("click", function () { copyText(PIX_KEY, null, "Chave Pix copiada"); });
   renderChips();
   renderGrid();
+})();
+</script>
+<script>
+// Música do convite: toca quando a lista é aberta pelo link direto.
+// Dentro do convite a lista abre num quadro e a música já vem do convite, então aqui fica desligada.
+(function () {
+  var inFrame = false;
+  try { inFrame = window.self !== window.top; } catch (e) { inFrame = true; }
+  if (inFrame) return;
+  var START = 37, btn = document.getElementById("musBtn"), on = false, userOff = false;
+  var a = new Audio("../musica.mp3");
+  a.preload = "auto";
+  btn.hidden = false; document.body.classList.add("has-mus");
+  function label() { btn.textContent = on ? "❚❚ Pausar música" : "♫ Tocar música"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
+  function seek() { try { if (a.currentTime < START) a.currentTime = START; } catch (e) {} }
+  function ready() { seek(); if (!on && !userOff) a.play().then(function () { on = true; label(); }).catch(function () {}); }
+  if (a.readyState >= 1) ready(); else a.addEventListener("loadedmetadata", ready, { once: true });
+  function start() {
+    seek();
+    var p = a.play();
+    on = true; label();
+    if (p && p.catch) p.catch(function () { on = false; label(); });
+  }
+  function stop() { a.pause(); on = false; label(); }
+  a.addEventListener("ended", function () { try { a.currentTime = START; } catch (e) {} a.play().catch(function () {}); });
+  btn.addEventListener("click", function () { if (on) { userOff = true; stop(); } else { userOff = false; start(); } });
+  function firstTouch(e) {
+    if (userOff || on || e.target === btn) return;
+    start();
+  }
+  document.addEventListener("click", firstTouch, true);
+  document.addEventListener("touchend", firstTouch, true);
 })();
 </script>
 
