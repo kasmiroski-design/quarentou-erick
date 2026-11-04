@@ -171,6 +171,11 @@
   footer { margin-top: 36px; display: grid; gap: 8px; font-size: 14px; color: var(--muted); }
   footer .keyline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
   footer code { font: 500 13px var(--font-mono); color: var(--fg); overflow-wrap: anywhere; }
+  .credits { font-size: 12px; color: var(--muted); }
+  .credits summary { cursor: pointer; }
+  .credits p { margin: 6px 0; }
+  .credits ul { margin: 0; padding-left: 18px; columns: 2 200px; }
+  .credits a { color: var(--muted); }
   .toast {
     position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px));
     transform: translateX(-50%); background: var(--fg); color: var(--bg);
@@ -178,7 +183,7 @@
   }
   @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
   .musbtn {
-    all: unset; box-sizing: border-box; cursor: pointer; position: fixed; z-index: 35;
+    all: unset; box-sizing: border-box; cursor: pointer; position: fixed; z-index: 25;
     right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
     min-height: 44px; padding: 0 16px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;
     font: 700 14px var(--font-body); letter-spacing: .04em; background: var(--accent); color: var(--accent-fg);
@@ -230,6 +235,7 @@
       <button class="btn ghost small" id="copykey" type="button">Copiar chave</button>
     </div>
     <span>Confira sempre o nome do recebedor na tela de confirmação do seu banco antes de pagar.</span>
+    <details class="credits"><summary>Créditos das fotos</summary><p>Fotos do <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, de uso livre (Licença Unsplash). Toque no nome para ver a foto original e o autor.</p><ul><li><a href="https://unsplash.com/photos/white-crew-neck-t-shirt-acn5ERAeSb4" target="_blank" rel="noopener">Camiseta de marca</a></li><li><a href="https://unsplash.com/photos/a-bottle-of-perfume-sitting-on-top-of-a-blue-cloth-zKWbz8JtOPQ" target="_blank" rel="noopener">Perfume Árabe</a></li><li><a href="https://unsplash.com/photos/a-couple-of-bracelets-sitting-on-top-of-a-table-Lpd_JIshOQM" target="_blank" rel="noopener">Pulseira</a></li><li><a href="https://unsplash.com/photos/a-plain-white-t-shirt-hangs-on-a-wooden-hanger-8ACmRoleM24" target="_blank" rel="noopener">Camiseta básica de algodão</a></li><li><a href="https://unsplash.com/photos/a-white-polo-shirt-hanging-on-a-clothes-rack-F5i3PZXYkvY" target="_blank" rel="noopener">Camisa polo</a></li><li><a href="https://unsplash.com/photos/white-hoodie-and-distressed-jeans-kJXGTOY1wLQ" target="_blank" rel="noopener">Moletom com capuz</a></li><li><a href="https://unsplash.com/photos/a-man-in-a-black-shirt-and-red-shorts-A_xuGH5aSuc" target="_blank" rel="noopener">Bermuda esportiva</a></li><li><a href="https://unsplash.com/photos/purple-and-orange-jacket-12P0_rzSNpM" target="_blank" rel="noopener">Jaqueta corta-vento</a></li><li><a href="https://unsplash.com/photos/pair-of-white-low-top-sneakers-BeClz11lyXY" target="_blank" rel="noopener">Tênis casual</a></li><li><a href="https://unsplash.com/photos/pair-of-white-and-orange-athletic-shoes-on-white-box-dwKiHoqqxk8" target="_blank" rel="noopener">Tênis de corrida</a></li><li><a href="https://unsplash.com/photos/gray-baseball-cap-on-white-surface-2loKxdi6Hmo" target="_blank" rel="noopener">Boné aba curva</a></li><li><a href="https://unsplash.com/photos/brown-leather-bifold-wallet-on-black-leather-textile-Xbjf9nnEQ4s" target="_blank" rel="noopener">Carteira de couro</a></li><li><a href="https://unsplash.com/photos/brown-leather-belt-with-silver-buckle-KAx7H0jxo28" target="_blank" rel="noopener">Cinto de couro</a></li><li><a href="https://unsplash.com/photos/brown-leather-backpack-on-white-surface-3o-X8WJOP5E" target="_blank" rel="noopener">Mochila urbana</a></li><li><a href="https://unsplash.com/photos/a-blue-suitcase-sitting-on-top-of-a-wooden-floor-166umbWL6Ec" target="_blank" rel="noopener">Mala de bordo</a></li><li><a href="https://unsplash.com/photos/round-gray-analog-watch-with-brown-band-SX9IouL_qOg" target="_blank" rel="noopener">Relógio analógico</a></li><li><a href="https://unsplash.com/photos/black-framed-sunglasses-on-white-table-3xtCeUhqZWE" target="_blank" rel="noopener">Óculos de sol</a></li><li><a href="https://unsplash.com/photos/silver-heart-pendant-necklace-on-white-background-u1Hv_erOQH0" target="_blank" rel="noopener">Colar prata com pingente</a></li><li><a href="https://unsplash.com/photos/a-close-up-of-a-person-wearing-a-bracelet-NJGAfl1fXK8" target="_blank" rel="noopener">Pulseira de couro</a></li><li><a href="https://unsplash.com/photos/man-wearing-a-silver-bracelet-on-his-wrist-zythYf2wmDw" target="_blank" rel="noopener">Pulseira prata</a></li><li><a href="https://unsplash.com/photos/a-clear-glass-perfume-bottle-with-a-silver-cap-DIDH4_HcK8Q" target="_blank" rel="noopener">Perfume importado 100 ml</a></li><li><a href="https://unsplash.com/photos/clear-glass-perfume-bottle-with-black-background-Y8kwv9_Vay8" target="_blank" rel="noopener">Perfume amadeirado</a></li><li><a href="https://unsplash.com/photos/perfume-bottle-and-cosmetic-jars-nka_sIQpKEU" target="_blank" rel="noopener">Perfume floral</a></li><li><a href="https://unsplash.com/photos/black-xiaomi-mi-fitness-tracker-5--lSW0MiE0" target="_blank" rel="noopener">Smartband fitness</a></li><li><a href="https://unsplash.com/photos/flatlay-photography-of-wireless-headphones-PDX_a_82obo" target="_blank" rel="noopener">Fone Bluetooth over-ear</a></li><li><a href="https://unsplash.com/photos/black-and-blue-bluetooth-earbuds-qt9_OfTaaeY" target="_blank" rel="noopener">Fone sem fio com estojo</a></li><li><a href="https://unsplash.com/photos/white-and-silver-portable-speaker-on-brown-wooden-table-gbG65gRAGx4" target="_blank" rel="noopener">Caixa de som Bluetooth</a></li><li><a href="https://unsplash.com/photos/white-power-bank-with-three-charging-cables-7JbgHNq4h4k" target="_blank" rel="noopener">Power bank 20.000 mAh</a></li><li><a href="https://unsplash.com/photos/white-and-black-polaroid-one-step-2-instant-camera-on-white-board-KsLPTsYaqIQ" target="_blank" rel="noopener">Câmera instantânea</a></li><li><a href="https://unsplash.com/photos/game-controller-in-neon-light-hUD0PUczwJQ" target="_blank" rel="noopener">Controle para videogame</a></li><li><a href="https://unsplash.com/photos/silver-vacuum-flask-on-brown-dried-grass-l4VPAybei94" target="_blank" rel="noopener">Garrafa térmica</a></li><li><a href="https://unsplash.com/photos/yellow-travel-mug-in-green-grass-cw78QJcjG-4" target="_blank" rel="noopener">Caneca térmica</a></li><li><a href="https://unsplash.com/photos/open-book-on-top-of-several-stacked-books-9DaOYUYnOls" target="_blank" rel="noopener">Box de livros</a></li><li><a href="https://unsplash.com/photos/game-pieces-and-dice-on-board-3WceTBlUoMs" target="_blank" rel="noopener">Jogo de tabuleiro</a></li><li><a href="https://unsplash.com/photos/two-amber-glass-containers-mFTOFzUKdl0" target="_blank" rel="noopener">Vela aromática</a></li><li><a href="https://unsplash.com/photos/a-green-plant-in-a-white-pot-on-a-table-r1DT7rvE5v4" target="_blank" rel="noopener">Planta com vaso</a></li><li><a href="https://unsplash.com/photos/pink-cosmetic-containers-and-makeup-brush-dMjkQJs58uo" target="_blank" rel="noopener">Kit skincare</a></li><li><a href="https://unsplash.com/photos/salmon-fillet-with-salsa-and-red-wine-awj7sRviVXo" target="_blank" rel="noopener">Vale jantar</a></li><li><a href="https://unsplash.com/photos/popcorn-being-poured-from-cup-MWKNEloQRXA" target="_blank" rel="noopener">Vale cinema para dois</a></li><li><a href="https://unsplash.com/photos/pizza-on-chopping-board-MqT0asuoIcU" target="_blank" rel="noopener">Vale delivery</a></li><li><a href="https://unsplash.com/photos/library-photograph-I1oL89qxefc" target="_blank" rel="noopener">Vale livraria</a></li><li><a href="https://unsplash.com/photos/black-and-gray-stones-on-white-surface-kA4FIx3N_hw" target="_blank" rel="noopener">Vale spa e massagem</a></li><li><a href="https://unsplash.com/photos/gold-and-silver-gift-box-CnrDuY0tFrg" target="_blank" rel="noopener">Vale presente R$ 500</a></li><li><a href="https://unsplash.com/photos/brown-gift-box-with-pink-ribbon-f94JPVrDbnY" target="_blank" rel="noopener">Outro valor</a></li></ul></details>
   </footer>
 </main>
 
@@ -254,51 +260,51 @@
   var RECEIVER_CITY = "BRASIL";       // até 15 caracteres, sem acento
   // type = desenho, hue = cor (0-360). Para usar foto real, adicione  img: "data:image/jpeg;base64,..."
   var ITEMS = [
-    { name: "Camiseta Adidas", price: 159.00, cat: "Roupas e calçados", type: "shirt", hue: 215 },
-    { name: "Perfume Árabe", price: 220.00, cat: "Perfumes", type: "perfume", hue: 38 },
-    { name: "Pulseira", price: 85.00, cat: "Acessórios", type: "beads", hue: 330 },
-    { name: "Camiseta básica de algodão", price: 89.90, cat: "Roupas e calçados", type: "shirt", hue: 160 },
-    { name: "Camisa polo", price: 129.00, cat: "Roupas e calçados", type: "polo", hue: 350 },
-    { name: "Moletom com capuz", price: 249.00, cat: "Roupas e calçados", type: "hoodie", hue: 255 },
-    { name: "Bermuda esportiva", price: 99.00, cat: "Roupas e calçados", type: "shorts", hue: 25 },
-    { name: "Jaqueta corta-vento", price: 289.00, cat: "Roupas e calçados", type: "jacket", hue: 195 },
-    { name: "Tênis casual", price: 349.00, cat: "Roupas e calçados", type: "sneaker", hue: 210 },
-    { name: "Tênis de corrida", price: 479.00, cat: "Roupas e calçados", type: "sneaker", hue: 12 },
-    { name: "Boné aba curva", price: 89.00, cat: "Acessórios", type: "cap", hue: 140 },
-    { name: "Carteira de couro", price: 119.00, cat: "Acessórios", type: "wallet", hue: 28 },
-    { name: "Cinto de couro", price: 95.00, cat: "Acessórios", type: "belt", hue: 20 },
-    { name: "Mochila urbana", price: 189.00, cat: "Acessórios", type: "backpack", hue: 230 },
-    { name: "Mala de bordo", price: 489.00, cat: "Acessórios", type: "suitcase", hue: 175 },
-    { name: "Relógio analógico", price: 299.00, cat: "Acessórios", type: "watch", hue: 45 },
-    { name: "Óculos de sol", price: 169.00, cat: "Acessórios", type: "shades", hue: 270 },
-    { name: "Colar prata com pingente", price: 229.00, cat: "Acessórios", type: "necklace", hue: 205 },
-    { name: "Pulseira de couro", price: 109.00, cat: "Acessórios", type: "cuff", hue: 22 },
-    { name: "Pulseira prata", price: 259.00, cat: "Acessórios", type: "beads", hue: 215 },
-    { name: "Perfume importado 100 ml", price: 389.00, cat: "Perfumes", type: "perfume", hue: 280 },
-    { name: "Perfume amadeirado", price: 279.00, cat: "Perfumes", type: "perfume", hue: 18 },
-    { name: "Perfume floral", price: 249.00, cat: "Perfumes", type: "perfume", hue: 335 },
-    { name: "Smartband fitness", price: 199.00, cat: "Tecnologia", type: "band", hue: 150 },
-    { name: "Fone Bluetooth over-ear", price: 329.00, cat: "Tecnologia", type: "headphones", hue: 235 },
-    { name: "Fone sem fio com estojo", price: 159.00, cat: "Tecnologia", type: "earbuds", hue: 185 },
-    { name: "Caixa de som Bluetooth", price: 219.00, cat: "Tecnologia", type: "speaker", hue: 5 },
-    { name: "Power bank 20.000 mAh", price: 139.00, cat: "Tecnologia", type: "powerbank", hue: 100 },
-    { name: "Câmera instantânea", price: 449.00, cat: "Tecnologia", type: "camera", hue: 340 },
-    { name: "Controle para videogame", price: 399.00, cat: "Tecnologia", type: "controller", hue: 250 },
-    { name: "Garrafa térmica", price: 109.00, cat: "Casa e lazer", type: "thermos", hue: 200 },
-    { name: "Caneca térmica", price: 95.00, cat: "Casa e lazer", type: "mug", hue: 15 },
-    { name: "Box de livros", price: 139.00, cat: "Casa e lazer", type: "book", hue: 355 },
-    { name: "Jogo de tabuleiro", price: 179.00, cat: "Casa e lazer", type: "dice", hue: 265 },
-    { name: "Vela aromática", price: 95.00, cat: "Casa e lazer", type: "candle", hue: 35 },
-    { name: "Planta com vaso", price: 85.00, cat: "Casa e lazer", type: "plant", hue: 135 },
-    { name: "Kit skincare", price: 189.00, cat: "Casa e lazer", type: "skincare", hue: 170 },
-    { name: "Vale jantar", price: 250.00, cat: "Vales", type: "voucher", hue: 10 },
-    { name: "Vale cinema para dois", price: 120.00, cat: "Vales", type: "voucher", hue: 285 },
-    { name: "Vale delivery", price: 150.00, cat: "Vales", type: "voucher", hue: 28 },
-    { name: "Vale livraria", price: 100.00, cat: "Vales", type: "voucher", hue: 200 },
-    { name: "Vale spa e massagem", price: 350.00, cat: "Vales", type: "voucher", hue: 160 },
-    { name: "Vale presente R$ 500", price: 500.00, cat: "Vales", type: "voucher", hue: 45 }
+    { name: "Camiseta de marca", price: 159.00, cat: "Roupas e calçados", type: "shirt", hue: 215, img: "fotos/camiseta-de-marca.jpg" },
+    { name: "Perfume Árabe", price: 220.00, cat: "Perfumes", type: "perfume", hue: 38, img: "fotos/perfume-arabe.jpg" },
+    { name: "Pulseira", price: 85.00, cat: "Acessórios", type: "beads", hue: 330, img: "fotos/pulseira.jpg" },
+    { name: "Camiseta básica de algodão", price: 89.90, cat: "Roupas e calçados", type: "shirt", hue: 160, img: "fotos/camiseta-basica-de-algodao.jpg" },
+    { name: "Camisa polo", price: 129.00, cat: "Roupas e calçados", type: "polo", hue: 350, img: "fotos/camisa-polo.jpg" },
+    { name: "Moletom com capuz", price: 249.00, cat: "Roupas e calçados", type: "hoodie", hue: 255, img: "fotos/moletom-com-capuz.jpg" },
+    { name: "Bermuda esportiva", price: 99.00, cat: "Roupas e calçados", type: "shorts", hue: 25, img: "fotos/bermuda-esportiva.jpg" },
+    { name: "Jaqueta corta-vento", price: 289.00, cat: "Roupas e calçados", type: "jacket", hue: 195, img: "fotos/jaqueta-corta-vento.jpg" },
+    { name: "Tênis casual", price: 349.00, cat: "Roupas e calçados", type: "sneaker", hue: 210, img: "fotos/tenis-casual.jpg" },
+    { name: "Tênis de corrida", price: 479.00, cat: "Roupas e calçados", type: "sneaker", hue: 12, img: "fotos/tenis-de-corrida.jpg" },
+    { name: "Boné aba curva", price: 89.00, cat: "Acessórios", type: "cap", hue: 140, img: "fotos/bone-aba-curva.jpg" },
+    { name: "Carteira de couro", price: 119.00, cat: "Acessórios", type: "wallet", hue: 28, img: "fotos/carteira-de-couro.jpg" },
+    { name: "Cinto de couro", price: 95.00, cat: "Acessórios", type: "belt", hue: 20, img: "fotos/cinto-de-couro.jpg" },
+    { name: "Mochila urbana", price: 189.00, cat: "Acessórios", type: "backpack", hue: 230, img: "fotos/mochila-urbana.jpg" },
+    { name: "Mala de bordo", price: 489.00, cat: "Acessórios", type: "suitcase", hue: 175, img: "fotos/mala-de-bordo.jpg" },
+    { name: "Relógio analógico", price: 299.00, cat: "Acessórios", type: "watch", hue: 45, img: "fotos/relogio-analogico.jpg" },
+    { name: "Óculos de sol", price: 169.00, cat: "Acessórios", type: "shades", hue: 270, img: "fotos/oculos-de-sol.jpg" },
+    { name: "Colar prata com pingente", price: 229.00, cat: "Acessórios", type: "necklace", hue: 205, img: "fotos/colar-prata-com-pingente.jpg" },
+    { name: "Pulseira de couro", price: 109.00, cat: "Acessórios", type: "cuff", hue: 22, img: "fotos/pulseira-de-couro.jpg" },
+    { name: "Pulseira prata", price: 259.00, cat: "Acessórios", type: "beads", hue: 215, img: "fotos/pulseira-prata.jpg" },
+    { name: "Perfume importado 100 ml", price: 389.00, cat: "Perfumes", type: "perfume", hue: 280, img: "fotos/perfume-importado-100-ml.jpg" },
+    { name: "Perfume amadeirado", price: 279.00, cat: "Perfumes", type: "perfume", hue: 18, img: "fotos/perfume-amadeirado.jpg" },
+    { name: "Perfume floral", price: 249.00, cat: "Perfumes", type: "perfume", hue: 335, img: "fotos/perfume-floral.jpg" },
+    { name: "Smartband fitness", price: 199.00, cat: "Tecnologia", type: "band", hue: 150, img: "fotos/smartband-fitness.jpg" },
+    { name: "Fone Bluetooth over-ear", price: 329.00, cat: "Tecnologia", type: "headphones", hue: 235, img: "fotos/fone-bluetooth-over-ear.jpg" },
+    { name: "Fone sem fio com estojo", price: 159.00, cat: "Tecnologia", type: "earbuds", hue: 185, img: "fotos/fone-sem-fio-com-estojo.jpg" },
+    { name: "Caixa de som Bluetooth", price: 219.00, cat: "Tecnologia", type: "speaker", hue: 5, img: "fotos/caixa-de-som-bluetooth.jpg" },
+    { name: "Power bank 20.000 mAh", price: 139.00, cat: "Tecnologia", type: "powerbank", hue: 100, img: "fotos/power-bank-20-000-mah.jpg" },
+    { name: "Câmera instantânea", price: 449.00, cat: "Tecnologia", type: "camera", hue: 340, img: "fotos/camera-instantanea.jpg" },
+    { name: "Controle para videogame", price: 399.00, cat: "Tecnologia", type: "controller", hue: 250, img: "fotos/controle-para-videogame.jpg" },
+    { name: "Garrafa térmica", price: 109.00, cat: "Casa e lazer", type: "thermos", hue: 200, img: "fotos/garrafa-termica.jpg" },
+    { name: "Caneca térmica", price: 95.00, cat: "Casa e lazer", type: "mug", hue: 15, img: "fotos/caneca-termica.jpg" },
+    { name: "Box de livros", price: 139.00, cat: "Casa e lazer", type: "book", hue: 355, img: "fotos/box-de-livros.jpg" },
+    { name: "Jogo de tabuleiro", price: 179.00, cat: "Casa e lazer", type: "dice", hue: 265, img: "fotos/jogo-de-tabuleiro.jpg" },
+    { name: "Vela aromática", price: 95.00, cat: "Casa e lazer", type: "candle", hue: 35, img: "fotos/vela-aromatica.jpg" },
+    { name: "Planta com vaso", price: 85.00, cat: "Casa e lazer", type: "plant", hue: 135, img: "fotos/planta-com-vaso.jpg" },
+    { name: "Kit skincare", price: 189.00, cat: "Casa e lazer", type: "skincare", hue: 170, img: "fotos/kit-skincare.jpg" },
+    { name: "Vale jantar", price: 250.00, cat: "Vales", type: "voucher", hue: 10, img: "fotos/vale-jantar.jpg" },
+    { name: "Vale cinema para dois", price: 120.00, cat: "Vales", type: "voucher", hue: 285, img: "fotos/vale-cinema-para-dois.jpg" },
+    { name: "Vale delivery", price: 150.00, cat: "Vales", type: "voucher", hue: 28, img: "fotos/vale-delivery.jpg" },
+    { name: "Vale livraria", price: 100.00, cat: "Vales", type: "voucher", hue: 200, img: "fotos/vale-livraria.jpg" },
+    { name: "Vale spa e massagem", price: 350.00, cat: "Vales", type: "voucher", hue: 160, img: "fotos/vale-spa-e-massagem.jpg" },
+    { name: "Vale presente R$ 500", price: 500.00, cat: "Vales", type: "voucher", hue: 45, img: "fotos/vale-presente-r-500.jpg" }
   ];
-  var FREE_ITEM = { name: "Outro valor", price: null, cat: "Vales", type: "voucher", hue: 50 };
+  var FREE_ITEM = { name: "Outro valor", price: null, cat: "Vales", type: "voucher", hue: 50, img: "fotos/valor-livre.jpg" };
   // =====================================
 
   function slug(s) { return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
