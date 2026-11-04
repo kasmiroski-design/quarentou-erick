@@ -38,6 +38,12 @@ canvas{position:absolute;inset:0;width:100%;height:100%}
 .cta2{display:flex;align-items:center;justify-content:center;text-align:center;box-sizing:border-box;min-height:44px;border-radius:999px;border:1px solid #f0cf8a;background:#2a1b0e;color:#f0cf8a;font-weight:bold;text-decoration:none;font-family:inherit}
 .cta2:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .cta2:active{background:#4a3016}
+#giftsOv{position:fixed;inset:0;z-index:25;display:none;flex-direction:column;background:#1a110b}
+#giftsOv.on{display:flex}
+#giftsOv .top{display:flex;align-items:center;gap:8px;padding:8px 12px;padding-top:max(8px,env(safe-area-inset-top,0px));border-bottom:1px solid #5a3d25;background:#2b1b11}
+#giftsOv .top button{min-height:40px;padding:6px 14px;font-size:15px}
+#giftsOv .top .mus{margin-left:auto}
+#giftsOv iframe{flex:1;width:100%;border:0;background:#1a110b}
 button{font:inherit;font-size:15px;color:var(--ink);background:#2a1b0e;border:1px solid #7a5a2c;border-radius:999px;padding:8px 18px;min-width:44px;min-height:40px;cursor:pointer}
 button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 button:active{background:#4a3016}
@@ -102,6 +108,10 @@ button:active{background:#4a3016}
    <a id="gifts" class="cta2" href="presentes/">Lista de presentes</a>
   </div>
  </div>
+</div>
+<div id="giftsOv" role="dialog" aria-modal="true" aria-label="Lista de presentes">
+ <div class="top"><button id="giftsBack" type="button">← Voltar ao convite</button><button id="giftsMus" class="mus" type="button" aria-label="Ativar ou desativar a música">Música: ligada</button></div>
+ <iframe id="giftsFrame" title="Lista de presentes" allow="clipboard-write"></iframe>
 </div>
 <div class="modal" id="m1" role="dialog" aria-modal="true" aria-label="Confirmar presença"><div class="card">
  <h2>Confirme sua presença</h2><p>Quarentou! Sábado, 21/11/2026, às 19 horas.</p>
@@ -207,6 +217,10 @@ function play(){$('start').style.display='none';if(!audio)audio=mkAudio();seekSt
 function pause(){if(state!=='play')return;audio.pause();dv.pause();state='pause';cancelAnimationFrame(raf);$('pp').textContent='Continuar'}
 function resume(){audio.play().catch(()=>{});dv.play().catch(()=>{});state='play';$('pp').textContent='Pausar';tPrev=performance.now();frame()}
 $('go').onclick=play;
+function musLabel(){$('giftsMus').textContent=muted?'Música: desligada':'Música: ligada'}
+$('gifts').onclick=e=>{e.preventDefault();const f=$('giftsFrame');if(!f.src)f.src=$('gifts').getAttribute('href');if(state==='idle'||state==='done')play();else if(state==='pause')resume();musLabel();$('giftsOv').classList.add('on');$('giftsBack').focus()};
+$('giftsBack').onclick=()=>{$('giftsOv').classList.remove('on');$('gifts').focus()};
+$('giftsMus').onclick=()=>{$('sn').click();musLabel()};
 $('pp').onclick=()=>{state==='play'?pause():state==='pause'?resume():play()};
 $('rs').onclick=play;
 $('sn').onclick=()=>{muted=!muted;if(audio)audio.muted=muted;$('sn').textContent=muted?'Som: desligado':'Som: ligado';$('sn').setAttribute('aria-pressed',!muted)};
@@ -243,7 +257,7 @@ function renderList(){const ul=$('rows');ul.textContent='';$('cnt').textContent=
 $('csv').onclick=async()=>{const esc=v=>{v=String(v==null?'':v);if(/^[=+\-@]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'};
  const csv='\ufeffNome completo,Telefone\n'+rows.map(r=>[(r.nome+' '+(r.sobrenome||'')).trim(),r.telefone].map(esc).join(',')).join('\n');
  try{const d=await claude.use('downloads');if(d)await d.save({filename:'convidados-erick-40.csv',data:csv})}catch(e){}};
-addEventListener('keydown',e=>{if(e.key==='Escape'){shut('m1');shut('m2')}});
+addEventListener('keydown',e=>{if(e.key==='Escape'){shut('m1');shut('m2');$('giftsOv').classList.remove('on')}});
 function setMail(n,s,p){const body='Olá, Erick! Confirmo minha presença no Quarentou! (21/11/2026, 19 horas).\n\nNome: '+n+' '+s+'\nTelefone: '+p;$('mail').href='mailto:kasmiroski@gmail.com?subject='+encodeURIComponent('Confirmação de presença: '+n+' '+s)+'&body='+encodeURIComponent(body);const su='Confirmação de presença: '+n+' '+s;$('gmail').href='https://mail.google.com/mail/?view=cm&fs=1&to=kasmiroski@gmail.com&su='+encodeURIComponent(su)+'&body='+encodeURIComponent(body);$('cp').onclick=()=>copyTxt('Para: kasmiroski@gmail.com\nAssunto: '+su+'\n\n'+body,$('cp'));$('mailbox').hidden=false}
 async function copyTxt(t,btn){const o=btn.textContent;try{await navigator.clipboard.writeText(t);btn.textContent='Copiado!'}catch(e){const a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.append(a);a.select();try{document.execCommand('copy');btn.textContent='Copiado!'}catch(_){btn.textContent='Não foi possível copiar'}a.remove()}setTimeout(()=>{btn.textContent=o},2000)}
 const listTxt=()=>'Convidados confirmados: '+rows.length+'\n\n'+rows.map((r,i)=>(i+1)+'. '+(r.nome+' '+(r.sobrenome||'')).trim()+' - '+r.telefone).join('\n');
